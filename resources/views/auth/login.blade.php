@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center align-items-center" style="height: 70vh">
+    <div class="row justify-content-center align-items-center" style="height: 90vh">
         <div class="col-md-8">
           <div class="row mb-2">
                <div class="col-md-12 text-center">
@@ -12,7 +12,7 @@
                     </div>
                </div>     
           </div>     
-            <div class="card py-5">
+            <div class="card py-3">
                 <div class="card-body">
                     
                     <form method="POST" action="{{ route('login') }}">

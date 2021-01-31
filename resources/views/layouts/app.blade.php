@@ -5,10 +5,9 @@
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
-
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
     @yield('third_party_stylesheets')
 
     @stack('page_css')
@@ -78,17 +77,16 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-            {{-- <b>Version</b> 3.0.5 --}}
+            <b>Version</b> 1.0.0
         </div>
-        <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-        reserved.
+        <strong><a href="https://adminlte.io">AdminLTE.io</a> <a href="#">Inspection</a>
     </footer>
 </div>
 
-<script src="{{ mix('js/app.js') }}" defer></script>
-
+<script src="{{ mix('js/app.js') }}" ></script>
 @yield('third_party_scripts')
 
 @stack('page_scripts')
+   
 </body>
 </html>
